@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family:"iA Writer Duospace";
+    src:url("iAWriterDuospace-Bold.woff2") format("woff2"),url("iAWriterDuospace-Bold.woff") format("woff"),url("iAWriterDuospace-Bold.otf") format("opentype");
+    font-style:normal;
+    font-weight:700;
+}
+
+@font-face {
+    font-family:"iA Writer Duospace";
+    src:url("iAWriterDuospace-BoldItalic.woff2") format("woff2"),url("iAWriterDuospace-BoldItalic.woff") format("woff"),url("iAWriterDuospace-BoldItalic.otf") format("opentype");
+    font-style:italic;font-weight:700;
+}
+
+@font-face {
+    font-family:"iA Writer Duospace";
+    src:url("iAWriterDuospace-Regular.woff2") format("woff2"),url("iAWriterDuospace-Regular.woff") format("woff"),url("iAWriterDuospace-Regular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"iA Writer Duospace";
+    src:url("iAWriterDuospace-RegularItalic.woff2") format("woff2"),url("iAWriterDuospace-RegularItalic.woff") format("woff"),url("iAWriterDuospace-RegularItalic.otf") format("opentype");
+    font-style:italic;font-weight:400;
+}
