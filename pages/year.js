@@ -1,6 +1,5 @@
-import MainPageTemplate from "../components/MainPageTemplate";
+import EditionPageTemplate from "../components/EditionPageTemplate";
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
 
 export default function Home() {
 	return (
@@ -10,7 +9,7 @@ export default function Home() {
 				<meta name="description" content="Creative coding course at PoliMi" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<MainPageTemplate/>
+			<EditionPageTemplate/>
 		</div>
 	);
 }

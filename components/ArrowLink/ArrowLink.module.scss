@@ -1,0 +1,6 @@
+.arrowLink {
+  display: block;
+  &:before {
+    content:">"
+  }
+}
