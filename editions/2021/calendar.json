@@ -1,0 +1,35 @@
+{
+	"previous-year": "2020",
+	"this-year": "2021",
+	"next-year": "2022",
+	"lessons": [
+		{
+			"title": "Why are we here?"
+		},
+		{
+			"title": "Draw with code"
+		}
+	],
+	"assignments": [
+		{
+			"title": "Assignment 01"
+		},
+		{
+			"title": "Assignment 02"
+		}
+	],
+	"exams": [
+    {
+      "type": "pre-exam",
+      "date": "2022-01-20"
+    },
+    {
+      "type": "main exam session",
+      "date": "2022-01-27"
+    },
+    {
+      "type": "second session",
+      "date": "2022-02-15"
+    }
+  ]
+}

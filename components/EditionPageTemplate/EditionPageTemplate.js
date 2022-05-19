@@ -4,53 +4,43 @@ import Header from "../Header";
 import { Container, Row, Col } from "react-bootstrap";
 import ArrowLink from "../ArrowLink";
 import Lection from "../Lection";
+import { useEffect } from "react";
 
-export default function EditionPageTemplate() {
+export default function EditionPageTemplate({ data }) {
+	useEffect(()=>{
+		console.log(data)
+		
+	}, [])
 	return (
 		<>
 			<Header />
 			<Container>
 				<Row>
-					<Col><h4>[Page menu] [Program] [Assignments] [Case studies] [Projects]</h4></Col>
-				</Row>
-				<Row>
 					<Col>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-							nunc quam, viverra egestas imperdiet non, volutpat ut ex.
-							Suspendisse potenti. Aliquam erat volutpat. Quisque semper
-							molestie lacus sed facilisis. Nunc auctor elit sit amet odio
-							feugiat feugiat. In hac habitasse platea dictumst. Aliquam erat
-							volutpat. Etiam sodales lectus nec ipsum sollicitudin ultrices.
-							Sed dictum rutrum euismod. Donec pretium leo sit amet turpis
-							euismod, vel elementum risus iaculis.
-						</p>
+						<h4>
+						{data["academic-year"]}
+						</h4>
 					</Col>
 				</Row>
 				<Row>
 					<Col>
-						<ArrowLink url="https://getbootstrap.com/">Telegram</ArrowLink>
-						<ArrowLink url="https://getbootstrap.com/">Github</ArrowLink>
-						<ArrowLink url="https://getbootstrap.com/">
+						<p>{data["syllabus-text"]}</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<ArrowLink url={data["channel"]}>Telegram</ArrowLink>
+						<ArrowLink url={data["github"]}>Github</ArrowLink>
+						<ArrowLink url={data["studies-manifest"]}>
 							Manifesto degli studi
 						</ArrowLink>
 					</Col>
 				</Row>
 				<Row>
-					<h4>Program</h4>
-					<Lection />
-				</Row>
-				<Row>
-					<h4>Assignments</h4>
-					<p>The Assignments</p>
-				</Row>
-				<Row>
-					<h4>Case studies research</h4>
-					<p>The case studies</p>
-				</Row>
-				<Row>
-					<h4>Team projects</h4>
-					<p>The Projects</p>
+					<Col>
+						<h3>Lessons</h3>
+						{data.calendar.lessons.map((lesson,i)=><p key={i}>{lesson.title}</p>)}
+					</Col>
 				</Row>
 			</Container>
 			<Footer />

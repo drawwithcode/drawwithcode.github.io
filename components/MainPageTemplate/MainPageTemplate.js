@@ -5,7 +5,7 @@ import Header from "../Header";
 import classNames from "classnames";
 import Link from "next/link";
 
-export default function MainPageTemplate() {
+export default function MainPageTemplate({ editions }) {
 	return (
 		<>
 			<Header />
@@ -23,7 +23,11 @@ export default function MainPageTemplate() {
 				</Row>
 				<Row className={classNames("my-5")}>
 					<Col>
-						<h3><Link href="/year">[2022/23]</Link> [2021/22] [2020/21] [2019/20] [2018/19] [2017/18] [2016/17]</h3>
+						<h3>Editions</h3>
+						{ editions.map((d,i)=><Link key={i} href={d["directory"]}>{d["info"]["academic-year"]}</Link>) }
+						<p>
+							example page year<Link href="/year">[year]</Link>
+						</p>
 					</Col>
 				</Row>
 				<Row>
