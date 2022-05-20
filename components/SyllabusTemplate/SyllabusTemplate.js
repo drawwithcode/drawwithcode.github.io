@@ -3,6 +3,7 @@ import Header from "../Header";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./SyllabusTemplate.module.scss";
 import ArrowLink from "../ArrowLink";
+import P5Effect from "../P5Effect/P5Effect";
 
 export default function SyllabusTemplate({ data }) {
 	return (
@@ -37,6 +38,7 @@ export default function SyllabusTemplate({ data }) {
 					</Col>
 				</Row>
 			</Container>
+			<P5Effect/>
 			<Footer />
 		</>
 	);
