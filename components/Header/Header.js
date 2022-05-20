@@ -1,18 +1,30 @@
 import Link from "next/link";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import styles from "./Header.module.scss";
 
-export default function Header({edition}) {
-  return <Container fluid>
-    <Row>
-      <Col className="text-center">
-        <div className="d-flex justify-content-around">
-          <Link href={"/"+edition}>Syllabus</Link>
-          <Link href={"/"+edition+"/assignments"}>Assignments</Link>
-          <Link href={"/"+edition+"/case-studies"}>Case Studies</Link>
-          <Link href={"/"+edition+"/team-projects"}>Team Project</Link>
-        </div>
-      </Col>
-    </Row>
-  </Container>
+export default function Header({ edition }) {
+	return (
+		<Navbar bg="light" expand="md" sticky="top">
+			<Container fluid>
+				<Navbar.Brand href="/">Creative Coding</Navbar.Brand>
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="me-auto">
+						<Link href={"/" + edition}>
+							<a className="nav-link" tabIndex={0} role="button">Syllabus</a>
+						</Link>
+						<Link href={"/" + edition + "/assignments"}>
+							<a className="nav-link" tabIndex={0} role="button">Assignments</a>
+						</Link>
+						<Link href={"/" + edition + "/case-studies"}>
+							<a className="nav-link" tabIndex={0} role="button">Case Studies</a>
+						</Link>
+						<Link href={"/" + edition + "/team-projects"}>
+							<a className="nav-link" tabIndex={0} role="button">Team Project</a>
+						</Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
+	);
 }
