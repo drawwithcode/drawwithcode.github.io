@@ -3,7 +3,10 @@ import Header from "../Header";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./SyllabusTemplate.module.scss";
 import ArrowLink from "../ArrowLink";
-import P5Effect from "../P5Effect/P5Effect";
+// import P5Effect from "../P5Effect";
+import Timeline from "../Timeline";
+import Lesson from "../Lesson";
+import ReactMarkdown from "react-markdown";
 
 export default function SyllabusTemplate({ data }) {
 	return (
@@ -12,12 +15,12 @@ export default function SyllabusTemplate({ data }) {
 			<Container>
 				<Row>
 					<Col>
-						<h4>{data["academic-year"]}</h4>
+						<ReactMarkdown>{data["syllabus-text"]}</ReactMarkdown>
 					</Col>
 				</Row>
 				<Row>
 					<Col>
-						<div dangerouslySetInnerHTML={{ __html: data.syllabusTextHtml }}/>
+						<Timeline data={data.calendar} />
 					</Col>
 				</Row>
 				<Row>
@@ -33,12 +36,12 @@ export default function SyllabusTemplate({ data }) {
 					<Col>
 						<h3>Lessons</h3>
 						{data.calendar.lessons.map((lesson, i) => (
-							<p key={i}>{lesson.title}</p>
+							<Lesson key={i} data={{i,...lesson}} />
 						))}
+						{/* <P5Effect /> */}
 					</Col>
 				</Row>
 			</Container>
-			<P5Effect/>
 			<Footer />
 		</>
 	);
