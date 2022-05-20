@@ -6,7 +6,7 @@
     "dev": "open http://localhost:3000/ & next dev",
     "build": "next build",
     "export": "next build && next export && touch out/.nojekyll",
-    "pre-deploy": "rm -rf node_modules/.cache && next export && touch out/.nojekyll && rm -rf docs && mv out docs",
+    "pre-deploy": "rm -rf node_modules/.cache && npm run export && touch out/.nojekyll && rm -rf docs && mv out docs",
     "deploy": "npm run pre-deploy && git add docs/ && git commit -m \"Deploy website\" && git push",
     "start": "next start",
     "lint": "next lint"
@@ -19,6 +19,8 @@
     "react": "18.1.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "18.1.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
     "sass": "^1.51.0"
   },
   "devDependencies": {

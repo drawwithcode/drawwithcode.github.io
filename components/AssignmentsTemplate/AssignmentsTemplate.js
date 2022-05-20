@@ -5,6 +5,7 @@ export default function AssignmentsTemplate({ data }) {
 		<>
 			<Header edition={data.edition} />
 			<p>Assignments {data.edition}</p>
+			<p dangerouslySetInnerHTML={{ __html: data.assignmentsTextHtml }}/>
 		</>
 	);
 }

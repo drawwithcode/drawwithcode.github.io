@@ -5,6 +5,7 @@ export default function TeamProjectsTemplate({ data }) {
 		<>
 			<Header edition={data.edition} />
 			<p>Team projects template {data.edition}</p>
+			<p dangerouslySetInnerHTML={{ __html: data.teamProjectsTextHtml }}/>
 		</>
 	);
 }

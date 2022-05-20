@@ -5,6 +5,7 @@ export default function CaseStudiesTemplate({ data }) {
 		<>
 			<Header edition={data.edition} />
 			<p>Case studies {data.edition}</p>
+			<p dangerouslySetInnerHTML={{ __html: data.caseStudiesTextHtml }}/>
 		</>
 	);
 }

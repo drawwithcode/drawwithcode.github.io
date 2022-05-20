@@ -17,7 +17,7 @@ export default function SyllabusTemplate({ data }) {
 				</Row>
 				<Row>
 					<Col>
-						<p>{data["syllabus-text"]}</p>
+						<p dangerouslySetInnerHTML={{ __html: data.syllabusTextHtml }}/>
 					</Col>
 				</Row>
 				<Row>

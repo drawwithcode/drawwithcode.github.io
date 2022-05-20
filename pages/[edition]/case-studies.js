@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 	// Fetch necessary data for the blog post using params.edition
-	const postData = getEditionData(params.edition);
+	const postData = await getEditionData(params.edition);
 	return {
 		props: {
 			postData,
