@@ -24,10 +24,7 @@ export default function MainPageTemplate({ editions }) {
 				<Row className={classNames("my-5")}>
 					<Col>
 						<h3>Editions</h3>
-						{ editions.map((d,i)=><Link key={i} href={d["directory"]}>{d["info"]["academic-year"]}</Link>) }
-						<p>
-							example page year<Link href="/year">[year]</Link>
-						</p>
+						{ editions.map((d,i)=><Link key={i} href={"/"+d["directory"]}>{d["info"]["academic-year"]}</Link>) }
 					</Col>
 				</Row>
 				<Row>

@@ -1,25 +1,18 @@
-import styles from "./EditionPageTemplate.module.scss";
 import Footer from "../Footer";
 import Header from "../Header";
 import { Container, Row, Col } from "react-bootstrap";
+import styles from "./SyllabusTemplate.module.scss";
 import ArrowLink from "../ArrowLink";
 import Lection from "../Lection";
-import { useEffect } from "react";
 
-export default function EditionPageTemplate({ data }) {
-	useEffect(()=>{
-		console.log(data)
-		
-	}, [])
+export default function SyllabusTemplate({ data }) {
 	return (
 		<>
-			<Header />
+			<Header edition={data.edition} />
 			<Container>
 				<Row>
 					<Col>
-						<h4>
-						{data["academic-year"]}
-						</h4>
+						<h4>{data["academic-year"]}</h4>
 					</Col>
 				</Row>
 				<Row>
@@ -39,7 +32,9 @@ export default function EditionPageTemplate({ data }) {
 				<Row>
 					<Col>
 						<h3>Lessons</h3>
-						{data.calendar.lessons.map((lesson,i)=><p key={i}>{lesson.title}</p>)}
+						{data.calendar.lessons.map((lesson, i) => (
+							<p key={i}>{lesson.title}</p>
+						))}
 					</Col>
 				</Row>
 			</Container>

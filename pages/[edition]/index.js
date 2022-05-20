@@ -1,5 +1,5 @@
-import EditionPageTemplate from "../components/EditionPageTemplate/EditionPageTemplate";
-import { getAllEditionsId, getEditionData } from "../lib/load-editions";
+import SyllabusTemplate from "../../components/SyllabusTemplate";
+import { getAllEditionsId, getEditionData } from "../../lib/load-editions";
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
@@ -21,5 +21,5 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Edition({postData}) {
-  return <EditionPageTemplate data={postData}/>
+  return <SyllabusTemplate data={postData}/>
 }
