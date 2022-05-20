@@ -3,7 +3,6 @@ import Header from "../Header";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./SyllabusTemplate.module.scss";
 import ArrowLink from "../ArrowLink";
-import Lection from "../Lection";
 
 export default function SyllabusTemplate({ data }) {
 	return (
@@ -17,7 +16,7 @@ export default function SyllabusTemplate({ data }) {
 				</Row>
 				<Row>
 					<Col>
-						<p dangerouslySetInnerHTML={{ __html: data.syllabusTextHtml }}/>
+						<div dangerouslySetInnerHTML={{ __html: data.syllabusTextHtml }}/>
 					</Col>
 				</Row>
 				<Row>
