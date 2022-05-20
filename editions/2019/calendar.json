@@ -1,0 +1,35 @@
+{
+	"previous-year": "2018",
+	"this-year": "2019",
+	"next-year": "2020",
+	"lessons": [
+		{
+			"title": "Why are we here? 2019"
+		},
+		{
+			"title": "Draw with code 2019"
+		}
+	],
+	"assignments": [
+		{
+			"title": "Assignment 01 2019"
+		},
+		{
+			"title": "Assignment 02 2019"
+		}
+	],
+	"exams": [
+    {
+      "type": "pre-exam",
+      "date": "2020-01-20"
+    },
+    {
+      "type": "main exam session",
+      "date": "2020-01-27"
+    },
+    {
+      "type": "second session",
+      "date": "2020-02-15"
+    }
+  ]
+}
