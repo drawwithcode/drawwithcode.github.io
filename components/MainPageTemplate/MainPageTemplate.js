@@ -26,6 +26,11 @@ export default function MainPageTemplate({ editions }) {
 				</Row>
 				<Row>
 					<Col>
+						<h3>Course Structure and Tools</h3>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
 						<h3>Assignments</h3>
 						<p>
 							Sed facilisis eu urna vel condimentum. Ut molestie id velit eget
