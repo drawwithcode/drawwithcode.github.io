@@ -10,7 +10,7 @@ export default function Header({ edition }) {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Link href={"/" + edition}>
+						<Link href={"/" + edition + "/syllabus"}>
 							<a className="nav-link" tabIndex={0} role="button">Syllabus</a>
 						</Link>
 						<Link href={"/" + edition + "/assignments"}>

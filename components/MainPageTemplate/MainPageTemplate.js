@@ -9,7 +9,7 @@ export default function MainPageTemplate({ editions }) {
 		<>
 			<Navbar bg="light" expand="lg" sticky="top">
 				<Container fluid>
-					<Navbar.Brand href="#home">Creative Coding</Navbar.Brand>
+					<Navbar.Brand href="/">Creative Coding</Navbar.Brand>
 				</Container>
 			</Navbar>
 			<Container>
@@ -66,7 +66,7 @@ export default function MainPageTemplate({ editions }) {
 						<h3>Editions</h3>
 						{editions.map((d, i) => (
 							<p key={i}>
-								<Link href={"/" + d["directory"]}>
+								<Link href={"/" + d["directory"]+"/syllabus"}>
 									{d["info"]["academic-year"]}
 								</Link>
 							</p>

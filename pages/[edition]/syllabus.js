@@ -20,6 +20,6 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Edition({postData}) {
+export default function Syllabus({postData}) {
   return <SyllabusTemplate data={postData}/>
 }
