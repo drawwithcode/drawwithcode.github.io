@@ -15,7 +15,17 @@ export default function AssignmentGallery({ assignment, students }) {
 				</Col>
 			</Row>
 			<Row>
-				<Col>Students</Col>
+				<Col>
+					{students
+						.map(
+							(d) =>
+								"https://drawwithcode.github.io/" +
+								assignment.prefix +
+								"-" +
+								d["github-username"]
+						)
+						.toString()}
+				</Col>
 			</Row>
 		</div>
 	);

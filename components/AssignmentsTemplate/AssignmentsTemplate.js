@@ -18,7 +18,7 @@ export default function AssignmentsTemplate({ data }) {
 				{data.calendar.assignments.map((assignment, i) => (
 					<Row key={i}>
 						<Col>
-							<AssignmentGallery assignment={assignment} />
+							<AssignmentGallery assignment={assignment} students={data.students} />
 						</Col>
 					</Row>
 				))}
