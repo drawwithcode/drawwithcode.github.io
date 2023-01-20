@@ -1,0 +1,15 @@
+.coverBgEffect {
+	height: 50vh;
+	position: relative;
+	background-color: PeachPuff;
+	.info {
+		position: absolute;
+		bottom: 0;
+    display: flex;
+    flex-direction: column;
+		p, span {
+			background-color: white;
+      flex-grow: 0;
+		}
+	}
+}

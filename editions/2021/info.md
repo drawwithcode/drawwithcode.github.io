@@ -1,8 +1,9 @@
 ---
-title: "Creative Coding 2021/2022"
-academic-year: "2021/2022"
+title: "Creative Coding 2021/22"
+academic-year: "2021/22"
 channel: "https://t.me/creativecoding21"
 github: "https://github.com/drawwithcode"
+bg-effect-by: "Anna Gargantini"
 studies-manifest: "https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=757924&polij_device_category=DESKTOP&__pj0=0&__pj1=4ca2919175e6f54088c59644b0a0a537"
 syllabus-text: |
   Creative coding 2021/22, scrivere qualcosa qui

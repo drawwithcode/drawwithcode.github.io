@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styles from "./Header.module.scss";
 
-export default function Header({ edition }) {
+export default function Header({ edition, academicYear }) {
 	return (
 		<Navbar bg="light" expand="md" sticky="top">
 			<Container fluid>
@@ -10,6 +10,7 @@ export default function Header({ edition }) {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
+						<span>{academicYear} > </span>
 						<Link href={"/" + edition + "/syllabus"}>
 							<a className="nav-link" tabIndex={0} role="button">Syllabus</a>
 						</Link>
