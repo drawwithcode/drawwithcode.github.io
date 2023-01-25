@@ -12,8 +12,13 @@ export default function Lesson({ data }) {
 					<h3>{data.date}</h3>
 				</Col>
 				<Col>
-					<h4>{data.title}</h4>
-					<p>{data.description}</p>
+					<h4>
+						{data.title}{" "}
+						<a href={data.slides} target="_blank" rel="noreferrer">
+							^^
+						</a>
+					</h4>
+					{data.description && <p>{data.description}</p>}
 					{data.tags.length && (
 						<p>
 							{data.tags.map((tag) => (
@@ -21,8 +26,11 @@ export default function Lesson({ data }) {
 							))}
 						</p>
 					)}
-					{data.recording && <Link href={data.recording}>Recoding</Link>}
-					<h5><Link href="/">Recoding</Link></h5>
+					{data.recording && (
+						<h5>
+							<Link href={data.recording}>Recoding</Link>
+						</h5>
+					)}
 				</Col>
 			</Row>
 		</Container>
