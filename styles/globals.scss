@@ -1,11 +1,32 @@
 @import "./custom.bootstrap.scss";
 
+@font-face {
+	font-family: "Uncut Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://cdn.jsdelivr.net/gh/kaspernordkvist/uncut_sans/Webfonts/Uncut-Sans-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/kaspernordkvist/uncut_sans/Webfonts/Uncut-Sans-Regular.woff") format("woff");
+	font-display: swap
+}
+
 :root {
-	--bs-font-sans-serif: "Public Sans", sans-serif;
+	--bs-font-sans-serif: "Uncut Sans", sans-serif;
 	--violet: #840ce9;
 	--blue: #0090db;
+	--background: #FBFBFB;
+	--lightgray: #EEEEEE;
+	--darkgray: #AAAAAA; 
+}
+
+body {
+	background: var(--background);
 }
 
 a {
 	color: var(--violet);
+}
+
+.accordion-item {
+    background-color: var(--background);
+	border: 0;
+	border-bottom: 1px solid var(--darkgray);
 }

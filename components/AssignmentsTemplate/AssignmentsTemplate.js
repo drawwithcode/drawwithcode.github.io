@@ -1,4 +1,3 @@
-import styles from "./Assignments.module.scss";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Accordion } from "react-bootstrap";
@@ -8,6 +7,8 @@ import ReactMarkdown from "react-markdown";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsPlus } from "react-icons/bs";
 import classNames from "classnames";
+
+import styles from "./Assignments.module.scss";
 
 export default function AssignmentsTemplate({ data }) {
   return (
@@ -20,7 +21,7 @@ export default function AssignmentsTemplate({ data }) {
             <ReactMarkdown>{data["assignments-text"]}</ReactMarkdown>
           </Col>
         </Row>
-        <Accordion defaultActiveKey="0">
+        <Accordion defaultActiveKey="0" variant="custom">
           {data.calendar.assignments.map((assignment, i) => (
             <Accordion.Item eventKey={i} key={i}>
               <CustomToggle
@@ -54,13 +55,13 @@ function CustomToggle({ title, description, eventKey }) {
       onClick={decoratedOnClick}
       className={classNames(styles.customToggle, "w-100")}
     >
-      <Container>
+      <Container fluid>
         <Row>
           <Col xs={1}>
-            <BsPlus />
+            <h1><BsPlus /></h1>
           </Col>
-          <Col xs={5}>{title}</Col>
-          <Col xs={6}>{description}</Col>
+          <Col xs={5}><h1>{title}</h1></Col>
+          <Col xs={6}><p>{description}</p></Col>
         </Row>
       </Container>
     </button>
