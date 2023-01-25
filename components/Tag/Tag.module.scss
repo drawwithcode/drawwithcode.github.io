@@ -1,0 +1,8 @@
+.tag {
+  border: 1px solid var(--violet);
+  display: inline;
+  padding: 2px 5px;
+  &:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}

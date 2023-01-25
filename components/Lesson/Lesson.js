@@ -6,13 +6,13 @@ import classNames from "classnames";
 
 export default function Lesson({ data }) {
 	return (
-		<>
+		<Container className={classNames("mb-5")}>
 			<Row className={classNames(styles.lesson)}>
-				<Col>
-					<p>{data.i}</p>
+				<Col xs={3}>
+					<h3>{data.date}</h3>
 				</Col>
 				<Col>
-					<p>{data.title}</p>
+					<h4>{data.title}</h4>
 					<p>{data.description}</p>
 					{data.tags.length && (
 						<p>
@@ -22,11 +22,9 @@ export default function Lesson({ data }) {
 						</p>
 					)}
 					{data.recording && <Link href={data.recording}>Recoding</Link>}
-				</Col>
-				<Col>
-					<p>{data.date}</p>
+					<h5><Link href="/">Recoding</Link></h5>
 				</Col>
 			</Row>
-		</>
+		</Container>
 	);
 }

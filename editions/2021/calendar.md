@@ -2,7 +2,7 @@
 lessons:
   - title: Draw with code
     date: "2021-09-15"
-    description:
+    description: "Introduction to the course: why and how designers can learn how to code simple things"
     tags:
       - Drawing primitives
       - Transformations

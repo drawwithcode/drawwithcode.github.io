@@ -13,14 +13,15 @@ export default function SyllabusTemplate({ data }) {
 	return (
 		<>
 			<Header edition={data.edition} academicYear={data["academic-year"]} />
-			<Container fluid>
+			<Container className="p-0" fluid>
 				<Row>
 					<Col>
 						<div className={classNames(styles.coverBgEffect)}>
-							<div className={classNames(styles.info)}>
+							<div className={classNames(styles.info, "p-4")}>
 								<span>Creative Coding {data["academic-year"]}</span>
-								<span>Background by {data["bg-effect-by"]}</span>
+								<span>Background inspired by {data["bg-effect-by"]}</span>
 							</div>
+							<span className={classNames(styles.scrollDown, "p-4")}>V</span>
 						</div>
 					</Col>
 				</Row>
@@ -28,31 +29,30 @@ export default function SyllabusTemplate({ data }) {
 			<Container>
 				<Row>
 					<Col>
-						<ReactMarkdown>{data["syllabus-text"]}</ReactMarkdown>
-					</Col>
-				</Row>
-				<Row>
-					<Col>
 						<Timeline data={data.calendar} />
 					</Col>
 				</Row>
 				<Row>
 					<Col>
-						<ArrowLink url={data["channel"]}>Telegram</ArrowLink>
-						<ArrowLink url={data["github"]}>Github</ArrowLink>
+						<ReactMarkdown>{data["syllabus-text"]}</ReactMarkdown>
+					</Col>
+				</Row>
+				<Row className="mb-5">
+					<Col>
+						<ArrowLink url={data["channel"]}>Telegram Channel</ArrowLink>
+						<ArrowLink url={data["github"]}>Github Repository</ArrowLink>
 						<ArrowLink url={data["studies-manifest"]}>Manifesto degli studi</ArrowLink>
 					</Col>
 				</Row>
 				<Row>
 					<Col>
-						<h3>Lessons</h3>
-						{data.calendar.lessons.map((lesson, i) => (
-							<Lesson key={i} data={{ i, ...lesson }} />
-						))}
-						{/* <P5Effect /> */}
+						<h5 className="mb-4">Calendar</h5>
 					</Col>
 				</Row>
 			</Container>
+			{data.calendar.lessons.map((lesson, i) => (
+				<Lesson key={i} data={{ i, ...lesson }} />
+			))}
 			<Footer />
 		</>
 	);
