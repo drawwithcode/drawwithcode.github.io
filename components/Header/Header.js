@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 
 export default function Header({ edition, academicYear }) {
 	return (
-		<Navbar bg="transparent" expand="md" fixed="top">
+		<Navbar bg="transparent" expand="md" sticky="top">
 			<Container fluid>
 				<Navbar.Brand href="/">Creative Coding {academicYear}</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
