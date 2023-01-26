@@ -7,7 +7,7 @@ import CCLogo from "../CCLogo";
 
 export default function Footer() {
 	return (
-		<Container className="pb-4" fluid>
+		<Container className="pb-5 mt-5" fluid>
 			<Row>
 				<Col>
 					<div className={styles.logo}>

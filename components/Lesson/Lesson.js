@@ -9,13 +9,13 @@ export default function Lesson({ data }) {
 		<Container className={classNames("mb-5")}>
 			<Row className={classNames(styles.lesson)}>
 				<Col xs={3}>
-					<h3>{data.date}</h3>
+					<h4>{data.date}</h4>
 				</Col>
 				<Col>
 					<h4>
-						{data.title}{" "}
+						<span className="bit">📖</span> {data.title}{" "}
 						<a href={data.slides} target="_blank" rel="noreferrer">
-							^^
+							<span className="bit">↗</span>
 						</a>
 					</h4>
 					{data.description && <p>{data.description}</p>}
@@ -28,7 +28,7 @@ export default function Lesson({ data }) {
 					)}
 					{data.recording && (
 						<h5>
-							<Link href={data.recording}>Recoding</Link>
+							<span className="bit">⏯</span> <Link href={data.recording}>Recoding</Link>
 						</h5>
 					)}
 				</Col>

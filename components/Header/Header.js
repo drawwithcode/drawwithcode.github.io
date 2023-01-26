@@ -11,16 +11,16 @@ export default function Header({ edition, academicYear }) {
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
 						<Link href={"/" + edition + "/syllabus"}>
-							<a className="nav-link" tabIndex={0} role="button">Syllabus</a>
+							<a className="nav-link" tabIndex={0} role="button">Syllabus <span className="bit">🗓</span></a> 
 						</Link>
 						<Link href={"/" + edition + "/assignments"}>
-							<a className="nav-link" tabIndex={0} role="button">Assignments</a>
+							<a className="nav-link" tabIndex={0} role="button">Assignments <span className="bit">✋</span></a>
 						</Link>
 						<Link href={"/" + edition + "/case-studies"}>
-							<a className="nav-link" tabIndex={0} role="button">Case Studies</a>
+							<a className="nav-link" tabIndex={0} role="button">Case Studies <span className="bit">🔍</span></a>
 						</Link>
 						<Link href={"/" + edition + "/team-projects"}>
-							<a className="nav-link" tabIndex={0} role="button">Team Project</a>
+							<a className="nav-link" tabIndex={0} role="button">Team Project <span className="bit">★</span></a>
 						</Link>
 					</Nav>
 				</Navbar.Collapse>

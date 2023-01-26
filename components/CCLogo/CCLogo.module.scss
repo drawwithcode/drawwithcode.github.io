@@ -1,8 +1,10 @@
 .logo {
   text-align: center;
-  height: 30px;
-  width: 160px;
+  height: 28px;
+  padding: 1px 15px 0px 15px;
   display: block;
   border: 1px solid black;
   border-radius: 15px;
+  text-transform: uppercase;
+  font-family: var(--bs-font-display);
 }

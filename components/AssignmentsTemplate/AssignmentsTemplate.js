@@ -14,14 +14,14 @@ export default function AssignmentsTemplate({ data }) {
   return (
     <>
       <Header edition={data.edition} />
-      <Container>
+      <Container className="py-5">
         <Row>
           <Col>
             <p>Assignments {data.edition}</p>
-            <ReactMarkdown>{data["assignments-text"]}</ReactMarkdown>
+            <ReactMarkdown className="my-5">{data["assignments-text"]}</ReactMarkdown>
           </Col>
         </Row>
-        <Accordion defaultActiveKey="0" variant="custom">
+        <Accordion defaultActiveKey="0">
           {data.calendar.assignments.map((assignment, i) => (
             <Accordion.Item eventKey={i} key={i}>
               <CustomToggle

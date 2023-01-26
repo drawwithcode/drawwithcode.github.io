@@ -17,6 +17,7 @@ export default function SyllabusTemplate({ data }) {
 				<Row>
 					<Col>
 						<div className={classNames(styles.coverBgEffect)}>
+							{/* <P5Effect /> */}
 							<div className={classNames(styles.info, "p-4")}>
 								<span>Creative Coding {data["academic-year"]}</span>
 								<span>Background inspired by {data["bg-effect-by"]}</span>

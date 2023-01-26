@@ -8,9 +8,9 @@ studies-manifest: "https://www11.ceda.polimi.it/schedaincarico/schedaincarico/co
 syllabus-text: |
   **Coding made fun!** Learn to design interactive and unexpected experiences for screens of all sizes in this elective course at **Politecnico di Milano, Design School**. The course is open to all Communication Design students, both enrolled in a bachelor and in a master program.
 assignments-text: |
-  A *text for assignments 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for assignments 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 case-studies-text: |
-  A *text for case studies 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for case studies 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 team-projects-text: |
-  A *text for team projects 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for team projects 2019 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 ---

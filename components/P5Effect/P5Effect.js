@@ -10,7 +10,7 @@ const ReactP5Wrapper = dynamic(
 export default function P5Effect() {
 
 	function sketch(p5) {
-		p5.setup = () => p5.createCanvas(600, 400, p5.WEBGL);
+		p5.setup = () => p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL);
 
 		p5.draw = () => {
 			p5.background(250);
@@ -25,7 +25,6 @@ export default function P5Effect() {
 	}
 	return (
 		<>
-			<p>SKETCH</p>
 			<ReactP5Wrapper sketch={sketch} />
 		</>
 	);

@@ -8,8 +8,20 @@
 	font-display: swap
 }
 
+@font-face {
+    font-family: 'VG5000';
+    src:    url('fonts/VG5000-Regular_web.eot');
+    src:    url('fonts/VG5000-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('fonts/VG5000-Regular_web.woff') format('woff'),
+            url('fonts/VG5000-Regular_web.woff2') format('woff2'),
+            url('fonts/VG5000-Regular_web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
 	--bs-font-sans-serif: "Uncut Sans", sans-serif;
+	--bs-font-display: "VG5000", monospace;
 	--violet: #840ce9;
 	--blue: #0090db;
 	--background: #FBFBFB;
@@ -25,8 +37,25 @@ a {
 	color: var(--violet);
 }
 
+.accordion {
+	border-radius: 0;
+}
+
 .accordion-item {
     background-color: var(--background);
 	border: 0;
 	border-bottom: 1px solid var(--darkgray);
+}
+
+.accordion-item:last-child {
+	border-bottom: none;
+}
+
+.card {
+	border-radius: 0;
+	border: 0;
+}
+
+.bit {
+	font-family: var(--bs-font-display);
 }

@@ -8,9 +8,9 @@ studies-manifest: "https://www11.ceda.polimi.it/schedaincarico/schedaincarico/co
 syllabus-text: |
   Creative coding 2021/22, scrivere qualcosa qui
 assignments-text: |
-  # A *text for assignments 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for assignments 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 case-studies-text: |
-  # A *text for case studies 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for case studies 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 team-projects-text: |
-  # A *text for team projects 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
+  ## A *text for team projects 2021 page* in a **beautiful** [markdown](https://quire.getty.edu/documentation/fundamentals/).
 ---
